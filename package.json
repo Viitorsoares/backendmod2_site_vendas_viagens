@@ -1,0 +1,26 @@
+{
+  "name": "backendmod2_site_vendas_viagens",
+  "version": "1.0.0",
+  "description": "Backend da aplicação de cadastro do mod.2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viitorsoares/backendmod2_site_vendas_viagens.git"
+  },
+  "keywords": [
+    "API",
+    "Backend",
+    "MVC",
+    "REST"
+  ],
+  "author": "Vitor Soares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viitorsoares/backendmod2_site_vendas_viagens/issues"
+  },
+  "homepage": "https://github.com/Viitorsoares/backendmod2_site_vendas_viagens#readme"
+}
