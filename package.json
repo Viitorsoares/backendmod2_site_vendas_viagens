@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Viitorsoares/backendmod2_site_vendas_viagens/issues"
   },
-  "homepage": "https://github.com/Viitorsoares/backendmod2_site_vendas_viagens#readme"
+  "homepage": "https://github.com/Viitorsoares/backendmod2_site_vendas_viagens#readme",
+  "dependencies": {
+    "mysql2": "^3.12.0"
+  }
 }
