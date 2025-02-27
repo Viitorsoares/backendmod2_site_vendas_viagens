@@ -1,17 +1,33 @@
-import Customer from "./Model/customer.js";
+import Pacote from "./Model/pacote.js";
 
-let custumer = new Customer(
-    "777-777-777-77",
-    "Vitor Soares",
-    "Rua 1",
-    "Bairro 1",
-    "Cidade 1",
-    "SP",
-    "(77) 77777 7777",
-    "generico@gmail.com"
+let pacote = new Pacote(
+    "12345",
+    "Praias Recife",
+    "23-06-2025",
+    "Nordeste",
+    "3222"
 )
 
-custumer.telefone = "(11) 11111 1111"
+pacote.gravar().then(() => {
+    console.log(`Pacote gravado com sucesso`)
+}).catch((erro) => {
+    console.log(`Erro ao gravar o pacote ${erro}`)
+})
 
-console.log(custumer.toJSON())
-console.log(`O telefone de cliente é ${custumer.telefone}`)
+/*pacote.consultar().then((listaPacotes) => {
+    for (const pacote of listaPacotes) {
+        console.log(pacote.toJSON())
+    }
+})*/
+
+/*pacote.excluir().then(() => {
+    console.log("Pacote excluido com sucesso!");
+}).catch((erro) => {
+    console.log("Erro ao excluir o pacote: " + erro);
+})*/
+
+/*pacote.alterar().then(() => {
+    console.log("Pacote alterado com sucesso!");
+}).catch((erro) => {
+    console.log("Erro ao alterar o pacote: " + erro);
+});*/

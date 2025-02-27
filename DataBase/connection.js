@@ -1,4 +1,5 @@
 import mysql from "mysql2/promise";
+
 export default async function connection() {
     if (global.poolConexoes) {
         return await global.poolConexoes.getConnection();
@@ -8,6 +9,7 @@ export default async function connection() {
             user: 'root',
             database: 'backend',
             port: 3306,
+            password: 'Vitor803',
             waitForConnections: true,
             connectionLimit: 20,
             maxIdle: 10, // max idle connections, the default value is the same as `connectionLimit`
@@ -17,6 +19,6 @@ export default async function connection() {
             keepAliveInitialDelay: 0,
           });
 
-          return await global.poolConexoes.getConnection
+          return await global.poolConexoes.getConnection();
     }
 }
